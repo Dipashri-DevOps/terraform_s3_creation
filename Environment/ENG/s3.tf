@@ -1,15 +1,15 @@
 module "s3_apsouth" {
 
-    source  =  "../../modules/s3"
+  source = "../../modules/s3"
 
-    providers = {
-        aws = aws
-    }
+  providers = {
+    aws = aws
+  }
 
-    environment = ENG
+  environment = "eng"
 
-    region_name = ap-south-1
-  
+  region_name = "ap-south-1"
+
 }
 module "s3_apsoutheast" {
 
@@ -19,7 +19,7 @@ module "s3_apsoutheast" {
     aws = aws.west
   }
 
-  environment = ENG
+  environment = "eng"
 
-  region_name = ap-southeast-1
+  region_name = "ap-southeast-1"
 }
